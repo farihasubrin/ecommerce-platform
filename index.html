@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple E-commerce</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1 class="logo">ShopEasy</h1>
+
+    <div class="nav-actions">
+      <button id="openCartBtn" class="cart-btn">
+        🛒 Cart <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <h2 class="section-title">Products</h2>
+    <div id="productGrid" class="grid"></div>
+  </main>
+
+  <!-- Cart Drawer -->
+  <div id="cartDrawer" class="cart-drawer">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCartBtn" class="close-btn">✖</button>
+    </div>
+
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <div class="total">
+        <span>Total:</span>
+        <strong>$<span id="cartTotal">0</span></strong>
+      </div>
+      <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+      <p id="checkoutMsg" class="checkout-msg"></p>
+    </div>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
